@@ -121,13 +121,15 @@ img{
 
     #content{
 
-        height: 2500px;
+        min-height: 2000px;
 
     }
     .maso{
-        top: 1000px;
-        width: 300px;
+        top: 140%;
+        left:50%;
+        width: 70%;
         height: 400px;
+
     }
 
     .cartas {
