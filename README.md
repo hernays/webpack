@@ -1,17 +1,4 @@
-# webpack start
+# 21
 
-este es el proyecto inicial para crear aplicaciones utilizanco webpack
+juego 21
 
-
-### Nota:
-Recuerden reconstruir los módulos de Node 
-````
-
-npm install
-`````
-
-y para construir el build, recuerden
-````
-
-npm run build
-````

@@ -1,16 +1,6 @@
 import './css/styles.css';
-import './styles.css';
-
-import foto from './assets/img/pm2.png';
-
-var nombre = "hernays";
-
-console.log(nombre);
+import { JuegoCartas } from './assets/js/cartas-class';
+import {  } from './assets/js/eventos';
 
 
-const img = document.createElement('img');
 
-img.src = foto;
-document.body.append(img)
-
-   
