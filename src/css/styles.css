@@ -21,7 +21,8 @@ ul{
 }
 
 ul > li{
-    padding: 5px;
+    padding: 3%;
+    font-size: 30px;
     margin:5px;
     list-style: none;
     cursor:pointer;
@@ -112,6 +113,27 @@ img{
 .disabled { 
     opacity: 0.5;
     pointer-events: none;
+  }
+
+
+
+  @media(max-width: 600px){
+
+    #content{
+
+        height: 2500px;
+
+    }
+    .maso{
+        top: 1000px;
+        width: 300px;
+        height: 400px;
+    }
+
+    .cartas {
+        width: 350px;
+        height: 450px;
+    }
   }
 
 
