@@ -144,14 +144,18 @@ export class JuegoCartas  {
 
             this.crearCarta(carta, this.puntosUsuarios.length -1);
 
-            puntos = this.calcularPuntos(this.puntosUsuarios.length-1, carta);
 
-            puntos = puntos + 0;
+                puntos = this.calcularPuntos(this.puntosUsuarios.length-1, carta);
+
+                puntos = puntos + 0;
+
 
             if(puntos >= 21 || puntos > 21){
 
                 break;
             }
+           
+
 
          }while( (puntos < puntosUsuario) && (puntosUsuario <= 21) );
 
@@ -218,16 +222,22 @@ const nuevoJuegos0 = document.querySelector('#nuevo');*/
 
           let carta =  this.pedirCarta();
            this.crearCarta(carta,0);
-           let puntos = this.calcularPuntos( 0 , carta);
-           if(puntos > 21){
-            this.pedir.disabled = true;
-            this.detener.disabled = true;
-            this.turnoComputadora(puntos);
-           }else if(puntos == 21){
-            this.turnoComputadora(puntos);
-            this.pedir.disabled = true;
-            this.detener.disabled = true;
-           }
+
+           setTimeout( () => {
+
+            let puntos = this.calcularPuntos( 0 , carta);
+            if(puntos > 21){
+             this.pedir.disabled = true;
+             this.detener.disabled = true;
+             this.turnoComputadora(puntos);
+            }else if(puntos == 21){
+             this.turnoComputadora(puntos);
+             this.pedir.disabled = true;
+             this.detener.disabled = true;
+            }
+
+           },10)
+          
 
        return puntos;
 
